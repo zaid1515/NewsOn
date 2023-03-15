@@ -240,7 +240,7 @@ body.light {
 #item3 {
     grid-column: 1/span 1;
     grid-row: 2/span 3;
-    background: url('/img/ai.jpg') center center/cover;
+    background: url('./img/ai.jpg') center center/cover;
 }
 
 #item3Bot {
@@ -277,11 +277,11 @@ body.light {
 }
 
 #item4 {
-    background: url('/img/city2.jpg') center center/cover;
+    background: url('./img/city2.jpg') center center/cover;
 }
 
 #item5 {
-    background: url('/img/nature.jpg') center center/cover;
+    background: url('./img/nature.jpg') center center/cover;
 }
 
 #item1>button {
@@ -330,23 +330,23 @@ body.light {
 }
 
 .bgart-1 {
-    background: url('img/art1.jpg') center center/cover;
+    background: url('./img/art1.jpg') center center/cover;
 }
 
 .bgart-2 {
-    background: url('img/art2.jpg') center center/cover;
+    background: url('./img/art2.jpg') center center/cover;
 }
 
 .bgart-3 {
-    background: url('img/art3.jpg') center center/cover;
+    background: url('./img/art3.jpg') center center/cover;
 }
 
 .bgart-4 {
-    background: url('img/art4.jpg') center center/cover;
+    background: url('./img/art4.jpg') center center/cover;
 }
 
 .bgart-5 {
-    background: url('img/art5.jpg') center center/cover;
+    background: url('./img/art5.jpg') center center/cover;
 }
 
 .hr {
@@ -399,35 +399,35 @@ hr {
 }
 
 #qr1 {
-    background: url('img/qr1.jpg') center center/cover;
+    background: url('./img/qr1.jpg') center center/cover;
 }
 
 #qr2 {
-    background: url('img/qr2.jpg') center center/cover;
+    background: url('./img/qr2.jpg') center center/cover;
 }
 
 #qr3 {
-    background: url('img/qr3.jpg') center center/cover;
+    background: url('./img/qr3.jpg') center center/cover;
 }
 
 #qr4 {
-    background: url('img/qr4.jpg') center center/cover;
+    background: url('./img/qr4.jpg') center center/cover;
 }
 
 #qr5 {
-    background: url('img/qr5.jpg') center center/cover;
+    background: url('./img/qr5.jpg') center center/cover;
 }
 
 #qr6 {
-    background: url('img/qr6.jpg') center center/cover;
+    background: url('./img/qr6.jpg') center center/cover;
 }
 
 #qr7 {
-    background: url('img/qr7.jpg') center center/cover;
+    background: url('./img/qr7.jpg') center center/cover;
 }
 
 #qr8 {
-    background: url('img/qr8.jpg') center center/cover;
+    background: url('./img/qr8.jpg') center center/cover;
 }
 
 .qr {
@@ -463,35 +463,35 @@ hr {
 }
 
 #opimg1 {
-    background: url('img/op1.jpg') center center/cover;
+    background: url('./img/op1.jpg') center center/cover;
 }
 
 #opimg2 {
-    background: url('img/op2.jpg') center center/cover;
+    background: url('./img/op2.jpg') center center/cover;
 }
 
 #opimg3 {
-    background: url('img/op3.jpg') center center/cover;
+    background: url('./img/op3.jpg') center center/cover;
 }
 
 #opimg4 {
-    background: url('img/op4.jpg') center center/cover;
+    background: url('./img/op4.jpg') center center/cover;
 }
 
 #opimg5 {
-    background: url('img/op5.jpg') center center/cover;
+    background: url('./img/op5.jpg') center center/cover;
 }
 
 #opimg6 {
-    background: url('img/op8.jpg') center center/cover;
+    background: url('./img/op8.jpg') center center/cover;
 }
 
 #opimg7 {
-    background: url('img/op7.jpg') center center/cover;
+    background: url('./img/op7.jpg') center center/cover;
 }
 
 #opimg8 {
-    background: url('img/oppp.jpg') center center/cover;
+    background: url('./img/oppp.jpg') center center/cover;
 }
 
 .op {
@@ -520,22 +520,22 @@ hr {
 }
 
 #poptag1{
-    background: url('img/pt1.jpg') center center/cover;
+    background: url('./img/pt1.jpg') center center/cover;
 }
 #poptag2{
-    background: url('img/pt2.jpg') center center/cover;
+    background: url('./img/pt2.jpg') center center/cover;
 }
 #poptag3{
-    background: url('img/pt3.jpg') center center/cover;
+    background: url('./img/pt3.jpg') center center/cover;
 }
 #poptag4{
-    background: url('img/pt4.jpg') center center/cover;
+    background: url('./img/pt4.jpg') center center/cover;
 }
 #poptag5{
-    background: url('img/pt5.jpg') center center/cover;
+    background: url('./img/pt5.jpg') center center/cover;
 }
 #poptag6{
-    background: url('img/pt6.jpg') center center/cover;
+    background: url('./img/pt6.jpg') center center/cover;
 }
 .pt{
     height: 10rem;
