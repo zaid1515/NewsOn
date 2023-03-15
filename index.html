@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsOn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new.js">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper Bundle Library for Quick Read section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<!-- res is a class for elements visible in the responsive mode on smaller screens -->
+<!-- center class to align elements at the center -->
+<!-- headcon class for headings -->
+
+<body>
+    <nav class="wide">
+
+        <a href="./index.html">
+            <h2 class="heading">NewsOn</h2>
+        </a>
+        <!-- <img src="" alt=""> -->
+
+        <div id="menu" class="menu">
+            <ul class="list" id="navbar">
+                <li class="litem"><a class="gr link current" href="#">Home</a></li>
+                <li class="litem"><a class="gr link" href="#">Categories</a></li>
+                <li class="litem"><a class="gr link" href="#">Reviews</a></li>
+                <li class="litem"><a class="gr link" href="#">News</a></li>
+                <li class="litem"><a class="gr link" href="#">Membership</a></li>
+                <li class="litem"><a class="gr link" href="#">Contact</a></li>
+
+                
+            </ul>
+        </div>
+        <div class="list flex" id="icons">
+            <!-- <button class="icon center" id="theme"> -->
+                <!-- ri=remixicons and is class name for i tag to add the icons -->
+                <!-- <i class="ri-sun-line sun"></i> -->
+                <!-- <i class="ri-moon-line moon"></i> -->
+             <!-- </button> -->
+            <button class="icon center" id="search">
+                <i class="ri-search-line"></i>
+            </button>
+            <!-- <button class="icon center res" id="downnav"> -->
+                <!-- <i class="ri-menu-fill open"></i> -->
+                <!-- <i class="ri-close-line close"></i> -->
+            <!-- </button> -->
+            <button class="litem"><a class="gr" href="#">Sign in</a></button>
+            <button class="litem"><a class="gr" href="#">Sign Up</a></button>
+           
+        </div>
+
+
+    </nav>
+    <div class="container" id="main">
+        <div class="items" id="item1" style="font-size: .86rem;">
+            <button class="fancy">Breaking News</button>
+            Meta explores strategic alternatives for Kustomer business-software firm....
+        </div>
+        <div class="items" id="item2">
+            <div class="headcon center" id="trend">
+                Trending News
+            </div>
+            <div class="article" id="art-1">
+                <div class="flex">
+                    <div class="bgart-1 art">
+                        <div class="numtag">1</div>
+                    </div>
+                    <div class="datetime art-pad">
+                        Jan 31st 2023 &nbsp;<strong>.</strong>&nbsp; 4 Min read
+                        <div class="sampart">
+                            Sample article
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="article" id="art-2">
+                <div class="flex">
+                    <div class="bgart-2 art">
+                        <div class="numtag">2</div>
+                    </div>
+                    <div class="datetime art-pad">
+                        Jan 21st 2023 &nbsp;<strong>.</strong>&nbsp; 4 Min read
+                        <div class="sampart">
+                            Sample article
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="article" id="art-3">
+                <div class="flex">
+                    <div class="bgart-3 art">
+                        <div class="numtag">3</div>
+                    </div>
+                    <div class="datetime art-pad">
+                        Jan 27th 2023 &nbsp;<strong>.</strong>&nbsp; 4 Min read
+                        <div class="sampart">
+                            Sample article
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="article" id="art-4">
+                <div class="flex">
+                    <div class="bgart-4 art">
+                        <div class="numtag">4</div>
+                    </div>
+                    <div class="datetime art-pad">
+                        Jun 4th 2023 &nbsp;<strong>.</strong>&nbsp; 4 Min read
+                        <div class="sampart">
+                            Sample article
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="article" id="art-5">
+                <div class="flex">
+                    <div class="bgart-5 art">
+                        <div class="numtag">5</div>
+                    </div>
+                    <div class="datetime art-pad">
+                        Feb 3rd 2023 &nbsp;<strong>.</strong>&nbsp; 4 Min read
+                        <div class="sampart">
+                            Sample article
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+        </div>
+        <div class="items" id="item3">
+            <div class="category">TECHNOLOGY</div>
+            <div class="bottomtag" id="item3Bot">
+                <div class="datetime">
+                    Jul 2nd 2022 &nbsp;&nbsp; 4 Min read
+                </div>
+                Is AI the future?
+            </div>
+        </div>
+        <div class="items" id="item4">
+            <div class="category">LIFE</div>
+            <div class="bottomtag" id="item4Bot">
+                <div class="datetime">
+                    Jan 7th 2023 &nbsp;<strong>.</strong>&nbsp; 4 Min read
+                </div>
+                Life in a City...
+            </div>
+        </div>
+        <div class="items" id="item5">5
+            <div class="category">NATURE</div>
+            <div class="bottomtag" id="item5Bot">
+                <div class="datetime">
+                    Dec 16th 2022 &nbsp;<strong>.</strong>&nbsp; 4 Min read
+                </div>
+                Nature, the best healer
+            </div>
+        </div>
+    </div>
+
+    <div id="qread">
+        <div class="heading headcon" id="quickhead">
+            Quick Read
+            <div class="shadow-effect">QUICK READ</div>
+        </div>
+        <div class="container" id="qreadcont">
+            <div class="items qr" id="qr1">1
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+            <div class="items qr" id="qr2">2
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+            <div class="items qr" id="qr3">3
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+            <div class="items qr" id="qr4">4
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+            <div class="items qr" id="qr5">5
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+            <div class="items qr" id="qr6">6
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+            <div class="items qr" id="qr7">7
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+            <div class="items qr" id="qr8">8
+                <div class="bottomtag qrbot">
+                    <div class="datetime">
+                        Dec 12th 2022 &nbsp;<strong>.</strong>&nbsp; 2 Min read
+                    </div>
+                    Sample article
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="oldpost">
+        <div class="heading headcon" id="ophead">
+            Older posts
+            <div class="shadow-effect">OLDER POSTS</div>
+        </div>
+        <div class="container" id="opcont">
+            <div class="flex items">
+                <div class=" op" id="opimg1">1
+                </div>
+                <div class="datetime opcontent" id="optxt1">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items">
+                <div class=" op" id="opimg2">2
+                </div>
+                <div class="datetime opcontent" id="optxt2">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items">
+                <div class=" op" id="opimg3">3
+                </div>
+                <div class="datetime opcontent" id="optxt3">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items">
+                <div class=" op" id="opimg4">4
+                </div>
+                <div class="datetime opcontent" id="optxt4">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items">
+                <div class=" op" id="opimg5">5
+                </div>
+                <div class="datetime opcontent" id="optxt5">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items">
+                <div class=" op" id="opimg6">6
+                </div>
+                <div class="datetime opcontent" id="optxt6">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items">
+                <div class=" op" id="opimg7">7
+                </div>
+                <div class="datetime opcontent" id="optxt7">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div class="flex items">
+                <div class=" op" id="opimg8">8
+                </div>
+                <div class="datetime opcontent" id="optxt8">
+                    Feb 7th 2023 &nbsp;<strong>.</strong>&nbsp; 3 Min read
+                    <div class="sampart">
+                        Sample article title
+                    </div>
+                    <div class="optxt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo minima error possimus vero nisi aut numquam dolor laborum deleniti!
+                    </div>
+                </div>
+            </div>
+            <div style="cursor: pointer;">SEE MORE &gt;</div>
+        </div>
+    </div>
+    <div id="poptag">
+        <div class="headcon heading" id="pophead">
+            Popular tags
+            <div class="shadow-effect">
+                POPULAR TAGS
+            </div>
+        </div>
+        <div class="container" id="popcont">
+            <div class="pt items" id="poptag1">
+                <div class="popcategory">#Travel</div>
+            </div>
+            <div class="pt items" id="poptag2">
+                <div class="popcategory">#Technology</div>
+            </div>
+            <div class="pt items" id="poptag3">
+                <div class="popcategory">#Food</div>
+            </div>
+            <div class="pt items" id="poptag4">
+                <div class="popcategory">#Health</div>
+            </div>
+            <div class="pt items" id="poptag5">
+                <div class="popcategory">#Nature</div>
+            </div>
+            <div class="pt items" id="poptag6">
+                <div class="popcategory">#Fitness</div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter">
+        <div class="heading headcon" id="newlethead">
+            Newsletter
+            <div class="shadow-effect">NEWSLETTER</div>
+        </div>
+        <div class="container" id="newletcont">
+            <div class="nltxt headcon">
+                Subscribe to NewsOn
+            </div>
+            <div class="datetime nltxt">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque beatae distinctio magni. Voluptas, est dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vitae.
+            </div>
+            <div class="nltxt" id="em">
+                <form action="backend.js">
+                    <div>
+                        <input type="email" name="myEmail" id="emailId" placeholder="Enter your Email here!">
+                    </div>
+                </form>
+                    <button id="mailbtn">
+                        <i class="ri-mail-send-line icon"></i>
+                    </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container" id="footer">
+            <div class="items">NewsOn
+                <div class="datetime" id="foottxt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quod molestiae reiciendis consequatur incidunt quaerat quam totam optio expedita maiores.</div>
+                <i class="ri-facebook-box-line"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-github-fill"></i>
+                <i class="ri-linkedin-box-line"></i>
+                <div class="footitem datetime">&copy;2023 NewsOn. All rights reserved </div> 
+            </div>
+            <div class="items">CATEGORIES
+                <div class="datetime">
+                    <div class="footitem">Travel</div>
+                    <div class="footitem">Food</div>
+                    <div class="footitem">Technology</div>
+                    <div class="footitem">Health</div>
+                    <div class="footitem">Nature</div>
+                    <div class="footitem">Fitness</div>
+                </div>
+            </div>
+            <div class="items">USEFUL LINKS
+                <div class="datetime">
+                    <div class="footitem">Home</div>
+                    <div class="footitem">Elements</div>
+                    <div class="footitem">Tags</div>
+                    <div class="footitem">Authors</div>
+                    <div class="footitem">Membership</div>
+                </div>
+            </div>
+            <div class="items">COMPANY
+                <div class="datetime">
+                    <div class="footitem">Contact us</div>
+                    <div class="footitem">F.A.Q</div>
+                    <div class="footitem">Careers</div>
+                    <div class="footitem">Authors</div>
+                    <div class="footitem">Membership</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

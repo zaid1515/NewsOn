@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+
+/* we have to make variables as we want to have themes without variables it would be a complex task to transform themes */
+:root {
+    --light: rgb(190, 182, 182);
+    --light2: antiquewhite;
+    --prim: rgb(50, 44, 44);
+    --sec: #0e0d0df0;
+    --hov-light: rgb(242, 232, 232);
+    --hov-dark: var(--prim);
+    /* Below are not changed as of now */
+    --trans-light: rgba(255, 255, 255, 0.5);
+    --trans-dark: rgba(0, 0, 0, 0.788);
+    --text-col-big: #fae3e3;
+    --text-col-small: rgba(250, 235, 215, 0.6);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+}
+
+* {
+    font-family: 'Tilt Neon', cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* html:16px */
+body {
+    background-color: var(--sec);
+    letter-spacing: 1px;
+    /* transition:background-color .25s,color .25s; */
+}
+
+.gr {
+    /* color:rgb(241 240 240 / 50%); */
+    color: var(--light);
+}
+
+/* .link{
+    
+} */
+
+.wh {
+    color: var(--light2);
+}
+
+.headcon {
+    /* font-family: 'Signika Negative', sans-serif; */
+    font-size: 1.5rem;
+}
+
+.norfont {
+    font-family: 'Tilt Neon', cursive;
+
+}
+
+/* NAVBAR */
+.heading {
+    color: var(--light2);
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+    margin-left: 10rem;
+    /* margin-left: 3rem; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+input,
+button {
+    font: inherit;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    color: var(--light);
+    background-color: transparent;
+}
+
+i {
+    font-size: 1.6rem;
+    margin: 0 auto;
+
+}
+
+i:hover {
+    color: var(--hov-light);
+}
+
+/* nm */
+/* .wide{
+    max-width:160rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+} */
+
+.center {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* margin-top: 12px; */
+    /* background-color: rgba(11, 11, 11, 0.8); */
+    background-color: var(--prim);
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    /* display: none; */
+    justify-content: space-around;
+}
+
+#menu {
+    display: block;
+    margin: auto;
+}
+
+#navbar {
+    display: flex;
+    /* flex-wrap: wrap; */
+    font-size: 1.05rem;
+
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.list {
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+}
+
+.litem a {
+    padding: 0.32rem 0.8rem;
+}
+
+.litem a:hover {
+    /* color:  rgb(242, 232, 232); */
+    color: var(--hov-light);
+}
+
+.current {
+    color: var(--hov-light);
+}
+
+#icons {
+    margin-right: 9.5rem;
+}
+
+button {
+    cursor: pointer;
+    margin: 0rem .4rem;
+}
+
+/* Theme change */
+/* nm */
+body.light {
+    /* --light:rgb(190, 182, 182); */
+    --light: rgb(50, 45, 45);
+    --light2: rgba(21, 21, 21, 0.8);
+    --prim: rgb(190, 182, 182);
+    --sec: antiquewhite;
+    --hov-light: rgb(242, 232, 232);
+    /* Below are not changed as of now */
+    /* --trans-light:rgba(255, 255, 255,0.5); */
+    --trans-light: #252830;
+    --trans-dark: rgba(0, 0, 0, 0.1);
+}
+
+/* .menu{
+    position: absolute;
+    top: 6rem;
+    right: 1.5rem;   
+    /* flex in .navbar */
+/* padding-right: 2rem;
+    background-color: var(--sec);
+    opacity:0;
+    transform:scale(0);*/
+/* to make the element disappear */
+/*  transition:opacity .25s ease in;    
+    /* }  */
+
+/* if don't want to include above css block then #icons and .heading me include 14rem margin */
+.container {
+    /* width: 70rem; */
+    /* position: relative; */
+    /* border:2px solid white; */
+    margin: 5rem 9.5rem;
+    /* margin-bottom: 3rem; */
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.4fr;
+    height: 42rem;
+    grid-template-rows: 1.9fr 9.5fr 9.5fr;
+
+}
+
+.items {
+    /* background-color: blanchedalmond; */
+    /* border:2px solid green; */
+    color: rgb(250, 227, 227);
+    margin: 0.34rem;
+    font-size: 1.1rem;
+
+}
+
+#item1 {
+    grid-column: 1/span 2;
+    background-color: var(--prim);
+    /* grid-row:1/span 1; */
+}
+
+#item2 {
+    grid-column: 3/span 3;
+    background-color: var(--prim);
+    grid-row: 1/span 3;
+    /* height: 10rem; */
+}
+
+#item3 {
+    grid-column: 1/span 1;
+    grid-row: 2/span 3;
+    background: url('/img/ai.jpg') center center/cover;
+}
+
+#item3Bot {
+    position: relative;
+    /* right: 0rem; */
+    top: 33.05rem;
+    bottom: 0rem;
+    /* opacity: 0.5px; */
+}
+
+#item4Bot {
+
+    position: relative;
+    /* right: 0rem; */
+    top: 14.15rem;
+    padding: .6rem 1rem;
+    bottom: 0rem;
+}
+
+#item5Bot {
+    position: relative;
+    /* right: 0rem; */
+    top: 12.6rem;
+    bottom: 0rem;
+}
+
+.bottomtag {
+    padding: .6rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    backdrop-filter: blur(0.06rem);
+    background-color: rgba(15, 15, 15, 0.5);
+
+}
+
+#item4 {
+    background: url('/img/city2.jpg') center center/cover;
+}
+
+#item5 {
+    background: url('/img/nature.jpg') center center/cover;
+}
+
+#item1>button {
+    color: var(--text-col-big);
+
+}
+
+#item1 {
+    color: rgba(250, 235, 215, 0.6);
+}
+
+.datetime {
+    font-size: 0.7rem;
+    padding: .5rem 0rem;
+    color: rgba(250, 235, 215, 0.6);
+}
+
+.fancy {
+    border: 2px solid var(--text-col-big);
+    padding: .75rem 1rem;
+    margin: 0.1rem;
+    font-size: 1rem;
+}
+.fancy::before{
+   
+}
+.category {
+    font-size: 0.74rem;
+    background-color: var(--sec);
+    display: inline;
+    padding: .2rem .3rem;
+    float: right;
+    margin: .5rem;
+}
+
+#trend {
+    color: var(--text-col-big);
+    padding: 1.32rem;
+    padding-bottom: .6rem;
+}
+
+.article {
+    /* padding: 2rem; */
+    margin: 1.32rem 1.05rem;
+    /* display: flex; */
+}
+
+.bgart-1 {
+    background: url('img/art1.jpg') center center/cover;
+}
+
+.bgart-2 {
+    background: url('img/art2.jpg') center center/cover;
+}
+
+.bgart-3 {
+    background: url('img/art3.jpg') center center/cover;
+}
+
+.bgart-4 {
+    background: url('img/art4.jpg') center center/cover;
+}
+
+.bgart-5 {
+    background: url('img/art5.jpg') center center/cover;
+}
+
+.hr {
+    padding: 0rem 3.8rem;
+    color: var(--sec);
+}
+
+hr {
+    background-color: rgb(65 55 55 / 94%);
+    height: .1rem;
+    border: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.sampart {
+    margin: 0.38rem;
+    margin-top: .4rem;
+    font-size: 1.1rem;
+    color: var(--text-col-big);
+}
+
+.art-pad {
+    margin-left: .7rem;
+    margin-top: .2rem;
+    cursor: pointer;
+}
+
+.numtag {
+    background-color: var(--sec);
+    display: inline;
+    border-radius: 3rem;
+    padding: 0.05rem 0.1rem;
+}
+
+.art {
+    height: 4.66rem;
+    width: 4.48rem;
+    border-radius: .3rem;
+    border: .12rem solid var(--sec);
+}
+
+#qreadcont {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 2fr 2fr;
+    margin-top: 2rem;
+}
+
+#qr1 {
+    background: url('img/qr1.jpg') center center/cover;
+}
+
+#qr2 {
+    background: url('img/qr2.jpg') center center/cover;
+}
+
+#qr3 {
+    background: url('img/qr3.jpg') center center/cover;
+}
+
+#qr4 {
+    background: url('img/qr4.jpg') center center/cover;
+}
+
+#qr5 {
+    background: url('img/qr5.jpg') center center/cover;
+}
+
+#qr6 {
+    background: url('img/qr6.jpg') center center/cover;
+}
+
+#qr7 {
+    background: url('img/qr7.jpg') center center/cover;
+}
+
+#qr8 {
+    background: url('img/qr8.jpg') center center/cover;
+}
+
+.qr {
+    height: 12rem;
+    width: 19rem;
+}
+
+.qrbot {
+    position: relative;
+    top: 6.14rem;
+}
+
+.shadow-effect {
+    /* font-family: 'Tilt Wrap', cursive; */
+    color: rgba(144, 140, 135, 0.3);
+    display: inline;
+    position: relative;
+    right: 6.8rem;
+    top: .94rem;
+    font-weight: bolder;
+}
+
+#oldpost {
+    color: var(--text-col-big);
+}
+
+#opcont {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 2fr 2fr 2fr;
+    /* margin-left: .8rem; */
+}
+
+#opimg1 {
+    background: url('img/op1.jpg') center center/cover;
+}
+
+#opimg2 {
+    background: url('img/op2.jpg') center center/cover;
+}
+
+#opimg3 {
+    background: url('img/op3.jpg') center center/cover;
+}
+
+#opimg4 {
+    background: url('img/op4.jpg') center center/cover;
+}
+
+#opimg5 {
+    background: url('img/op5.jpg') center center/cover;
+}
+
+#opimg6 {
+    background: url('img/op8.jpg') center center/cover;
+}
+
+#opimg7 {
+    background: url('img/op7.jpg') center center/cover;
+}
+
+#opimg8 {
+    background: url('img/oppp.jpg') center center/cover;
+}
+
+.op {
+    height: 8rem;
+    width: 28rem;
+}
+
+.opcontent {
+    background-color: var(--prim);
+    padding: .4rem;
+    cursor: pointer;
+}
+
+.optxt {
+    padding: .5rem .4rem;
+    padding-left: .2rem;
+    padding-bottom: .2rem;
+
+}
+#popcont {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 2fr 2fr;
+    /* margin-left: .8rem; */
+}
+
+#poptag1{
+    background: url('img/pt1.jpg') center center/cover;
+}
+#poptag2{
+    background: url('img/pt2.jpg') center center/cover;
+}
+#poptag3{
+    background: url('img/pt3.jpg') center center/cover;
+}
+#poptag4{
+    background: url('img/pt4.jpg') center center/cover;
+}
+#poptag5{
+    background: url('img/pt5.jpg') center center/cover;
+}
+#poptag6{
+    background: url('img/pt6.jpg') center center/cover;
+}
+.pt{
+    height: 10rem;
+    width: 24.5rem;
+}
+.popcategory{
+    font-size: 0.8rem;
+    background-color:rgb(14, 13, 13, 0.7);
+    position: relative;
+    top: 4rem;
+    left: 10rem;
+    padding: .5rem;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* float: right; */
+    /* margin: .5rem; */
+}
+#newletcont{
+    margin-top:3.5rem;
+    margin-bottom: 3.5rem;
+    color: var(--text-col-big);
+}
+.nltxt{
+    margin: .5rem 20rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* display: block; */
+}
+footer{
+    background-color: var(--prim);
+}
+#em{
+    margin-top: 1rem; ;
+}
+#emailId{
+    border:.1rem solid #302525;
+    padding: .3rem .3rem;
+    padding-right: 0rem;
+}
+#mailbtn{
+    padding:0rem .5rem;
+    margin: 0rem;
+    background-color: var(--prim);
+}
+#footer{
+    display: grid;
+    margin-bottom: 0rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 1rem;
+}
+#foottxt{
+    margin:.8rem 0rem;
+}
+#footer i{
+    padding: .7rem .4rem;
+}
+.footitem{
+    margin: .5rem 0rem;
+}
