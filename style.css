@@ -273,9 +273,12 @@ body.light {
     width: 100%;
     backdrop-filter: blur(0.06rem);
     background-color: rgba(15, 15, 15, 0.5);
-
+    
 }
-
+.bottomtag:hover{
+    background-color: rgba(15, 15, 15, 0.8);
+    
+}
 #item4 {
     background: url('./img/city2.jpg') center center/cover;
 }
@@ -370,7 +373,9 @@ hr {
     font-size: 1.1rem;
     color: var(--text-col-big);
 }
-
+.sampart:hover{
+    color: var(--text-col-small);
+}
 .art-pad {
     margin-left: .7rem;
     margin-top: .2rem;
@@ -503,8 +508,11 @@ hr {
     background-color: var(--prim);
     padding: .4rem;
     cursor: pointer;
+    transition: all 0.6s;
 }
-
+.opcontent:hover{
+    background-color: var(--sec);
+}
 .optxt {
     padding: .5rem .4rem;
     padding-left: .2rem;
@@ -540,7 +548,9 @@ hr {
 .pt{
     height: 10rem;
     width: 24.5rem;
+    cursor: pointer;
 }
+
 .popcategory{
     font-size: 0.8rem;
     background-color:rgb(14, 13, 13, 0.7);
