@@ -458,7 +458,7 @@ hr {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
     /* margin-left: .8rem; */
 }
 
@@ -596,4 +596,8 @@ footer{
 }
 .footitem{
     margin: .5rem 0rem;
+}
+
+.sm{
+    display:none;
 }
